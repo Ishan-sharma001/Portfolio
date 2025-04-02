@@ -1,0 +1,72 @@
+/* Projects Section */
+.projects {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #111, #222);
+    color: white;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: #6a11cb;
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Project Card */
+.project-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;  /* Hide initially for scroll animation */
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.p-h1{
+    color: #6a11cb;
+    font-size:8vh;
+    margin-bottom: 30px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Show cards when in viewport */
+.project-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Card Hover Effect */
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(106, 17, 203, 0.5);
+}

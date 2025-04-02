@@ -1,0 +1,51 @@
+/* Footer Styles */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-right .social-icon {
+    font-size: 1.5rem;
+    color: #6a11cb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-right .social-icon:hover {
+    color: #2575fc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-right {
+        margin-top: 10px;
+    }
+}

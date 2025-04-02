@@ -1,0 +1,56 @@
+/* Skills Section */
+.skills {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #111, #222);
+    color: white;
+}
+
+/* Skills Heading */
+.skills h1 {
+    font-size:8vh;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #6a11cb;
+   
+}
+
+/* Skill Items */
+.skills-container {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill {
+    text-align: left;
+}
+
+/* Skill Label */
+.skill span {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    background: #333;
+    height: 12px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Progress Fill (Starts at 0, Animates on Scroll) */
+.progress {
+    height: 100%;
+    width: 0; /* Starts from 0 */
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border-radius: 6px;
+    transition: width 2s ease-in-out;
+}

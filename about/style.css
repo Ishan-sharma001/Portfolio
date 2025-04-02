@@ -1,0 +1,44 @@
+/* Reset default styles */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Dark Theme */
+body {
+    color: #ffffff; /* Light text */
+   
+    align-items: center;
+    color: white;
+    text-align: center;
+   
+    background: linear-gradient(to right, #111, #222);
+    color: white;
+}
+
+/* Main Content Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+h1{
+    color: #6a11cb;
+    font-size:8vh;
+}

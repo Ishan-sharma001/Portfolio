@@ -1,0 +1,177 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #111, #222);
+    color: white;
+}
+
+
+    
+   
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-content {
+    max-width: 600px;
+    animation: floatText 3s ease-in-out infinite;
+}
+
+@keyframes floatText {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero h1 span {
+    color: #6a11cb;
+    /* Highlighted color */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #6a11cb;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2575fc;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+
+}
+
+.profile-img:hover {
+    box-shadow: 0 0 20px #6a11cb;
+    /* Purple Glow */
+    transform: scale(1.05);
+    /* Slightly enlarge */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin: 20px 0;
+    }
+}
+
+
+
+
+
+/* Add fade-in effect to the hero section */
+.hero {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Slide-in effect for the profile image */
+.profile-img {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideIn 1.5s ease-out forwards 0.5s;
+}
+
+/* Button hover effect */
+.btn {
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #2575fc;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Typing Animation */
+.typing::after {
+    content: "|";
+    /* Blinking Cursor */
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
