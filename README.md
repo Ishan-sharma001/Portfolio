@@ -2,6 +2,12 @@
 
 A modern, responsive personal portfolio website built using JavaScript, HTML, and CSS. This portfolio showcases my skills, projects, and experiences in web development, providing an interactive and visually appealing platform to highlight my work.
 
+<img src="img1.png" alt="Portfolio Preview" width="600px">
+<img src="img2.png" alt="Portfolio Preview" width="600px">
+<img src="img3.png" alt="Portfolio Preview" width="600px">
+<img src="img4.png" alt="Portfolio Preview" width="600px">
+<img src="img5.png" alt="Portfolio Preview" width="600px">
+
 ## Features
 - **Responsive Design** – Works seamlessly on all devices
 - **Smooth Animations** – Enhances user experience with CSS and JavaScript effects
